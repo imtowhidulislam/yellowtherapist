@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.paymentContainer{
+}
+.paymentContainer > *:nth-child(2){
+  position: relative;
+  margin-left: 2rem;
+}
+.paymentContainer > *:nth-child(2):before{
+  position: absolute; 
+  content: "";
+  top: 0;
+  left: -35%;
+  height: 100%;
+  width: 2px;
+  background: #7c7c7c;
+}
+.paymentContainer > *:nth-child(6){
+  position: relative;
+  margin-right: 2rem;
+}
+.paymentContainer > *:nth-child(6):after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -35%;
+  height: 100%;
+  width: 2px;
+  background: #7c7c7c;
+}
+.quesitonList > *:not(:last-child){
+  color: red;
+  margin-bottom: 1rem;
+}
+.quesitonList > *::marker{
+  color: orange;
+}

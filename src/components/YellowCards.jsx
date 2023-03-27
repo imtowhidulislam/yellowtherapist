@@ -5,14 +5,14 @@ import Image3 from "../assets/image3.svg";
 
 const YellowCards = () => {
   return (
-    <div className='grid grid-cols-fluideLayout2 place-items-center'>
+    <div className='grid grid-cols-fluideLayout2 gap-20 sm:gap-0 place-items-center mb-32'>
         <div className='p-2 md:p-8 max-w-3xl'>
             <img src={imageOne} alt="" />
             {/* <imageOne /> */}
         </div>
-        <div className='text-left p-4'>
-            <h2 className='text-4xl mb-8'>A bridge between</h2>
-            <p>A platform serving both of who seeks professional help for their mental well being and the professional therapists who are always ready to help. We're providing a smooth bridge between these two.</p>
+        <div className='text-left p-4 bg-[hsla(40,100%,90%,1)] relative h-52 rounded-md'>
+            <h2 className='text-4xl mb-8 '>A bridge between</h2>
+            <p className='absolute bg-[#42ffdc9a] p-4 rounded-md drop-shadow-lg backdrop-blur-md left-8 right-8 top-20'>A platform serving both of who seeks professional help for their mental well being and the professional therapists who are always ready to help. We're providing a smooth bridge between these two.</p>
         </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Buttons = () => {
   return (
-    <div>
+    <div className='my-20 sm:my-32'>
         <div className='py-buttonContainerPadY'>
             <h2 className='text-buttonTitle font-bold pb-buttonPadX'>what are you looking for?</h2>
             <div className='flex gap-x-buttonPadX items-center justify-center'>

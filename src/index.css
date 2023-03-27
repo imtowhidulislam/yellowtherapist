@@ -7,6 +7,10 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
+}
+.DiscountCard{
+  @apply flex items-center flex-col md:flex-row gap-4 w-full rounded-md p-6 bg-[#e0dfdf69] backdrop-blur-sm;
 }
 .paymentContainer{
 }
@@ -36,10 +40,62 @@
   width: 2px;
   background: #7c7c7c;
 }
+.links,.footerLinks{
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+/* .quesitonList > *::after{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #22f54f;
+  left: 0;
+  bottom: 0;
+  transition: width 300ms ease-in;
+} */
+:is(.links,.footerLinks)::after{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #34ffdd;
+  left: 0;
+  bottom: 0;
+  transition: width 300ms ease-in;
+}
+:is(.footerLink1,.footerLink2,.footerLink3)::after{
+  background-color: #c9c7c7;
+}
+.links1:hover::after{
+  width: 100%;
+}
+.links2:hover::after{
+  width: 100%;
+}
+.links3:hover::after{
+  width: 100%;
+}
+.footerLink1:hover::after{
+  width: 100%;
+}
+.footerLink2:hover::after{
+  width: 100%;
+}
+.footerLink3:hover::after{
+  width: 100%;
+}
 .quesitonList > *:not(:last-child){
-  color: red;
   margin-bottom: 1rem;
 }
 .quesitonList > *::marker{
   color: orange;
+  font-size: 1rem;
+}
+.tyt{
+  @apply bg-gray-100 w-max drop-shadow-lg py-2 px-8 rounded-full cursor-pointer uppercase text-yellow-500 text-base font-semibold hover:bg-yellow-500 duration-300 ease-out hover:text-white transition-all;
+}
+.rumuna{
+  @apply bg-gray-100 w-max drop-shadow-lg py-2 px-8 rounded-full cursor-pointer uppercase text-yellow-500 text-base;
 }

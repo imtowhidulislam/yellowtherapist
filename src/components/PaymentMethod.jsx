@@ -8,7 +8,7 @@ import visacard from "../assets/visacard.png";
 
 const PaymentMethod = () => {
   return (
-    <div>
+    <div className='py-20'>
         <h2 className='capitalize font-bold text-gray-500'>Secure and easy payment with wide range of checkout choices
         </h2>
         <div className='paymentContainer flex flex-wrap gap-4 items-center justify-center mt-8'>

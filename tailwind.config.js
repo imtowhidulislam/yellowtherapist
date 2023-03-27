@@ -6,6 +6,7 @@ module.exports = {
       gridTemplateColumns: {
         "fluideLayout": "repeat(auto-fit, minmax(15rem,1fr))",
         "fluideLayoutPayment": "repeat(auto-fit, minmax(5rem,1fr))",
+        "fluideLayoutPayment1": "repeat(auto-fit, minmax(8rem,1fr))",
         "fluideLayout2": "repeat(auto-fit, minmax(20rem,1fr))"
       },
       fontSize: {
